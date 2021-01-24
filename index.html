@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>David Perez | Développeur web</title>
+    <script language="JavaScript">
+        var txt= " - David Perez | Développeur web";
+        var vitesse=500;
+        var refresh=null;
+        function scroll_title() {
+        document.title=txt;
+        txt=txt.substring(1,txt.length)+txt.charAt(0);
+        refresh=setTimeout("scroll_title()",vitesse);}
+        scroll_title();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="languages">
+                <span class="french">Français</span>
+                <span class="english">English</span>
+            </div>
+            <nav>
+                <div class="nav-container">
+                    <img class="logo" src="/img/logo.svg">
+                    <a class="nav-item" href="#">À PROPOS</a>
+                    <a class="nav-item" href="#">PORTFOLIO</a>
+                    <a class="nav-item" href="#">CONTACT</a>
+                    <img src="/img/Github.svg">
+                    <img class="logo2" src="/img/linkedin.svg">
+                </div>
+            </nav>
+        </header>
+        <div class="hero">
+            <h4 class="hero-text">Salut, moi c'est</h4>
+            <h2 class="hero-text2">David PEREZ, développeur web.</h2>
+            <p class="hero-text3">Actuellement en fin de formation, je souhaite occuper un poste de développeur web junior à partir du mois de mai 2021, soit à temps plein soit en alternance.</p>
+            <img class="picture" src="img/hero_photo.svg">
+            <div class="btn">
+                <button class="btn1">CONTACTEZ-MOI<a class="btn1-txt" href="#"></a></button>
+                <button class="btn2">VOIR MON CV<a class="btn2-txt" href="#"></a></button>
+            </div>
+        </div>
+        <div class="header-end"></div>
+        <div class="about">
+            <p class="about-title">À propos de moi</p>
+        </div>
+        <div>
+            <p class="about-subtitle">Mon parcours</p>
+            <p class="about-text1">
+                L'informatique fait partie de ma vie depuis longtemps. Le premier ordinateur que j'ai utilisé était un 286 récupéré par mon père sur son lieu de travail quand j'étais à l'école primaire... Le rêve pour un enfant comme moi !<br />
+                Quelques années plus tard mon père est devenu informaticien et j'ai commencé à monter des ordinateurs avec lui. Je monte tous mes ordinateurs depuis.<br />
+                Il y a une dieaine d'années, séduit par la philosophie open source, je me suis tourné vers Ubuntu.<br />
+                Depuis peu, je m'intéresse aux crypto-monnaies et au web décentralisé.<br />
+                <br />
+                L'utilisation d'internet a commencé à se démocratiser en France quand j'ai commencé mes études universitaires; j'ai rapidement intégré cet outil formidable à mon quotidien et suivi son évolution incroyable.<br />
+                Selon moi le web est l'une des inventions les plus importantes de l'humanité, et je me dis souvent que je suis né 10 ou 15 ans trop tôt, car j'aurais certainement fait le choix d'autres études en étant né dans les années 90...<br />
+                <br />
+                Mais il n'est jamais trop tard ! Je suis très heureux aujourd'hui de pouvoir me reconvertir dans le développement web. J'ai hâte de pouvoir faire ma part, convaincu que les nouvelles technologies ont un grand rôle à jouer dans le monde de demain (la protection de l'environnement, la lutte contre les inégalités).
+            </p>
+        </div>
+    </div>
+</body>
+</html>
